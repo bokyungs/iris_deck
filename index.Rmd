@@ -1,0 +1,52 @@
+---
+title       : Developing Data Products Project using Slidify
+subtitle    : Iris data
+author      : Bokyung Yang-Stephens
+job         : 
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : [bootstrap, quiz]            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+## IRIS Data
+```{r inputData}
+data(iris)
+str(iris)
+```
+How many species of Iris are in the data?
+
+```{r species}
+unique(iris$Species)
+```
+
+--- .class #1
+
+## Plotting Petal Length against Petal Width
+```{r petal}
+plot(iris$Petal.Length, iris$Petal.Width, pch=21, xlab="Petal Length", ylab="Petal Width", bg = c("black", "red", "green3")[unclass(iris$Species)])
+```
+
+--- .class #2 
+
+## Plotting Sepal info. against Petal info.
+```{r petalSepal}
+pairs(iris[1:4], main="Iris data", pch=21, bg = c("black", "red", "green3")[unclass(iris$Species)])
+```
+
+--- &radio
+
+## Quiz on Iris
+Which species has the shortest average petal length?
+
+1. _Setosa_
+2. Versicolor
+3. Virginica
+
+*** .hint 
+It starts with an es.
+
+*** .explanation 
+Setosa has an average petal length of 1.46.
