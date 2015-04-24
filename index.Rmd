@@ -1,5 +1,5 @@
 ---
-title       : Developing Data Products Project using Slidify
+title       : Developing Data Products Project using slidify
 subtitle    : Iris data
 author      : Bokyung Yang-Stephens
 job         : 

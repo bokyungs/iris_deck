@@ -1,5 +1,5 @@
 ---
-title       : Developing Data Products Project using Slidify
+title       : Developing Data Products Project using slidify
 subtitle    : Iris data
 author      : Bokyung Yang-Stephens
 job         : 
@@ -46,7 +46,7 @@ unique(iris$Species)
 plot(iris$Petal.Length, iris$Petal.Width, pch=21, xlab="Petal Length", ylab="Petal Width", bg = c("black", "red", "green3")[unclass(iris$Species)])
 ```
 
-![plot of chunk petal](figure/petal-1.png) 
+![plot of chunk petal](assets/fig/petal-1.png) 
 
 --- .class #2 
 
@@ -56,7 +56,7 @@ plot(iris$Petal.Length, iris$Petal.Width, pch=21, xlab="Petal Length", ylab="Pet
 pairs(iris[1:4], main="Iris data", pch=21, bg = c("black", "red", "green3")[unclass(iris$Species)])
 ```
 
-![plot of chunk petalSepal](figure/petalSepal-1.png) 
+![plot of chunk petalSepal](assets/fig/petalSepal-1.png) 
 
 --- &radio
 
